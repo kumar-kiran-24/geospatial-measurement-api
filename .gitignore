@@ -1,0 +1,21 @@
+# Environment
+.env
+.env.local
+
+# Backend
+backend/.env
+backend/var/
+backend/__pycache__/
+backend/alembic/versions/*.pyc
+backend/.venv/
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store

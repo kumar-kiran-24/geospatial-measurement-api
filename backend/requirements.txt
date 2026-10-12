@@ -1,0 +1,25 @@
+# Runtime dependencies for the Geospatial File Measurement API.
+# Versions are pinned to exact releases so builds are reproducible.
+# See README.md "System dependencies" for the geospatial implications.
+
+# --- Web framework -----------------------------------------------------------
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# --- Validation & settings ---------------------------------------------------
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# --- Persistence -------------------------------------------------------------
+SQLAlchemy==2.0.36
+alembic==1.14.0
+psycopg[binary]==3.2.3
+
+# --- Geospatial --------------------------------------------------------------
+# pyogrio ships a bundled GDAL/OGR build (no system GDAL install required) and
+# is the IO engine used for KML and zipped Shapefile reads.
+geopandas==1.0.1
+shapely==2.0.6
+pyproj==3.7.0
+pyogrio==0.10.0
